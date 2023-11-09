@@ -1,5 +1,12 @@
 // ActionProvider starter code
-// import awsconfig from './aws-exports';
+import { Amplify, API } from 'aws-amplify'
+
+const getNextFromAPI = async () => {
+  // const data = await API.post('projectLangbotApi', '/text')
+  // console.log(data)
+  // return data
+  return "Pending: Call LLM"
+}
 
 class ActionProvider {
   constructor(
@@ -41,20 +48,12 @@ class ActionProvider {
   getNext = () => {
     // callLocalApi();
     // callLanbotApi();
-    const greetingMessage = this.createChatBotMessage("Calling LLM....")
-    this.updateChatbotState(greetingMessage)
+    getNextFromAPI().then((result) => {
+      const greetingMessage = this.createChatBotMessage(result);
+      this.updateChatbotState(greetingMessage);
+      });
+
   };
-
-  handleJavascriptList = () => {
-    const message = this.createChatBotMessage(
-      "Fantastic, I've got the following resources for you on Javascript:",
-      {
-        widget: "javascriptLinks",
-      }
-    );
-
-    this.updateChatbotState(message);
-    };
 
   updateChatbotState(message) {
 

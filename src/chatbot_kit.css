@@ -136,7 +136,7 @@
 
 .react-chatbot-kit-chat-container {
   position: relative;
-  width: 275px;
+  width: 575px;
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -151,7 +151,7 @@
   border-top-left-radius: 5px;
   background-color: #efefef;
   font-family: Arial;
-  display: flex;
+  display: block;
   align-items: center;
   font-size: 0.85rem;
   color: #514f4f;

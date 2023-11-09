@@ -15,7 +15,7 @@ export default function Lessononebutton(props) {
   const { overrides, ...rest } = props;
   const lessononeColonNicetomeetyouOnClick = useNavigateAction({
     type: "url",
-    url: "/conversation1",
+    url: "/convOneSample",
   });
   return (
     <Flex
