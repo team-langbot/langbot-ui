@@ -9,6 +9,7 @@ export { default as AboutUs } from "./AboutUs";
 // export { default as AboutUs2 } from "./AboutUs2";
 export { default as Applicationbutton } from "./Applicationbutton";
 export { default as ConvOneSample } from "./ConvOneSample";
+export { default as ConvTwoSample } from "./ConvTwoSample";
 export { default as ConvOneActual } from "./ConvOneActual";
 export { default as Conversation1 } from "./Conversation1";
 export { default as Conversationally } from "./Conversationally";

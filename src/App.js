@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Amplify, API } from 'aws-amplify'
 
 import {
-  LandingPage, LessonLobby, AboutUs, Conversation1, ConvOneSample, ConvOneActual
+  LandingPage, LessonLobby, AboutUs, Conversation1, ConvOneSample, ConvTwoSample, ConvOneActual
  } from './ui-components';
 
 
@@ -31,6 +31,7 @@ function App() {
           <Route path="lobby" element={<LessonLobby display="flex"/>} />
           <Route path="conversation1" element={<Conversation1 display="flex"/>} />
           <Route path="convOneSample" element={<ConvOneSample display="flex"/>} />
+          <Route path="convTwoSample" element={<ConvTwoSample display="flex"/>} />
           <Route path="convOneActual" element={<ConvOneActual display="flex"/>} />
           <Route path="text" element={<TestPage display="flex" />} />
           </Route>
