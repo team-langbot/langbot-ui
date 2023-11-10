@@ -141,6 +141,7 @@
 
 .react-chatbot-kit-chat-inner-container {
   height: 500px;
+  /* background-color: #f4e9e3; */
   background-color: #fff;
   border-radius: 3px;
   border-radius: 5px;
@@ -178,6 +179,7 @@
   border: none;
   font-size: 0.85rem;
   border-top: 1px solid #d8d8d8;
+  /* background-color: #d8f3ed; */
   border-bottom-left-radius: 5px;
 }
 

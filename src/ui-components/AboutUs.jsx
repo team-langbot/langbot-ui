@@ -7,8 +7,8 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import Letstalkandhomerouter from "./Letstalkandhomerouter";
-import Conversationallyheader from "./Conversationallyheader";
+import ConversationallyHeader from "./Conversationallyheader";
+import Routerbutton from "./Routerbutton";
 import Teammembers from "./Teammembers";
 import { Flex } from "@aws-amplify/ui-react";
 export default function AboutUs(props) {
@@ -17,8 +17,10 @@ export default function AboutUs(props) {
     <Flex
       gap="37px"
       direction="column"
-      width="2157px"
-      height="1391px"
+      width="unset"
+      height="unset"
+      // width="2157px"
+      // height="1391px"
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
@@ -27,27 +29,27 @@ export default function AboutUs(props) {
       {...getOverrideProps(overrides, "AboutUs")}
       {...rest}
     >
-      <Letstalkandhomerouter
+      <Routerbutton
         display="flex"
-        gap="36px"
+        gap="10px"
         direction="row"
         width="unset"
-        height="94px"
+        height="unset"
         justifyContent="flex-end"
-        alignItems="flex-end"
+        alignItems="center"
         shrink="0"
         alignSelf="stretch"
         position="relative"
-        padding="0px 30px 0px 30px"
-        backgroundColor="rgba(245,233,227,1)"
-        {...getOverrideProps(overrides, "let's talk and home router")}
-      ></Letstalkandhomerouter>
-      <Conversationallyheader
+        padding="10px 10px 10px 10px"
+        backgroundColor="rgba(244,233,227,1)"
+        {...getOverrideProps(overrides, "router button")}
+      ></Routerbutton>
+      <ConversationallyHeader
         display="flex"
         gap="10px"
         direction="column"
         width="unset"
-        height="403px"
+        height="120px"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -55,10 +57,10 @@ export default function AboutUs(props) {
         position="relative"
         padding="10px 10px 10px 10px"
         {...getOverrideProps(overrides, "conversationally header")}
-      ></Conversationallyheader>
+      ></ConversationallyHeader>
       <Teammembers
         display="flex"
-        gap="10px"
+        gap="0px"
         direction="row"
         width="unset"
         height="unset"

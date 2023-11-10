@@ -30,20 +30,6 @@ export default function LessonLobby(props) {
       {...getOverrideProps(overrides, "LessonLobby")}
       {...rest}
     >
-      <ConversationallyHeader
-        display="flex"
-        gap="10px"
-        direction="column"
-        width="unset"
-        height="120px"
-        justifyContent="center"
-        alignItems="center"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="10px 10px 10px 10px"
-        {...getOverrideProps(overrides, "conversationally header")}
-      ></ConversationallyHeader>
       <Routerbutton
         display="flex"
         gap="10px"
@@ -59,6 +45,20 @@ export default function LessonLobby(props) {
         backgroundColor="rgba(244,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
+      {/* <ConversationallyHeader
+        display="flex"
+        gap="10px"
+        direction="column"
+        width="unset"
+        height="120px"
+        justifyContent="center"
+        alignItems="center"
+        shrink="0"
+        alignSelf="stretch"
+        position="relative"
+        padding="10px 10px 10px 10px"
+        {...getOverrideProps(overrides, "conversationally header")}
+      ></ConversationallyHeader> */}
       <Lobbymainframe
         display="flex"
         gap="20px"

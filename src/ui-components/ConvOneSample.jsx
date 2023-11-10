@@ -27,20 +27,6 @@ export default function ConvOneSample(props) {
       {...getOverrideProps(overrides, "ConvOneSample")}
       {...rest}
     >
-      <Nicetomeetyouheader
-        display="flex"
-        gap="10px"
-        direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="center"
-        alignItems="center"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="10px 10px 10px 10px"
-        {...getOverrideProps(overrides, "nice to meet you header")}
-      ></Nicetomeetyouheader>
       <Routerbutton
         display="flex"
         gap="10px"
@@ -56,6 +42,20 @@ export default function ConvOneSample(props) {
         backgroundColor="rgba(244,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
+      <Nicetomeetyouheader
+        display="flex"
+        gap="10px"
+        direction="row"
+        width="unset"
+        height="unset"
+        justifyContent="center"
+        alignItems="center"
+        shrink="0"
+        alignSelf="stretch"
+        position="relative"
+        padding="10px 10px 10px 10px"
+        {...getOverrideProps(overrides, "nice to meet you header")}
+      ></Nicetomeetyouheader>
       <Flex
         gap="0"
         direction="column"

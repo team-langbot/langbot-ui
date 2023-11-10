@@ -30,31 +30,6 @@ export default function ConvOneActual(props) {
       {...getOverrideProps(overrides, "ConvOneActual")}
       {...rest}
     >
-      <Flex
-        gap="10px"
-        direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="center"
-        alignItems="center"
-        position="relative"
-        padding="10px 10px 10px 10px"
-        {...rest}
-      >
-        <Image
-          width="800px"
-          // height="366px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          // objectFit="cover"
-          src={nice_to_meet_you_lets_talk_header}
-        ></Image>
-      </Flex>
       <Routerbutton
         display="flex"
         gap="10px"
@@ -70,6 +45,32 @@ export default function ConvOneActual(props) {
         backgroundColor="rgba(244,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
+      {/* <Flex
+        gap="10px"
+        direction="row"
+        width="unset"
+        height="unset"
+        justifyContent="center"
+        alignItems="center"
+        position="relative"
+        padding="10px 10px 10px 10px"
+        {...rest}
+      > */}
+        <Image
+          width="800px"
+          // height="366px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          shrink="0"
+          position="relative"
+          padding="0px 0px 0px 0px"
+          // objectFit="cover"
+          src={nice_to_meet_you_lets_talk_header}
+        ></Image>
+      {/* </Flex> */}
+
       <Flex
         gap="0"
         direction="column"

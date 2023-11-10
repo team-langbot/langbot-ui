@@ -8,6 +8,8 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
+import ram from "./images/ram.jpeg"
+
 export default function Ram(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,7 +26,7 @@ export default function Ram(props) {
       {...rest}
     >
       <Image
-        width="unset"
+        width="95%"
         height="unset"
         display="block"
         gap="unset"
@@ -37,6 +39,7 @@ export default function Ram(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src={ram}
         {...getOverrideProps(overrides, "Rectangle 11")}
       ></Image>
       <Text

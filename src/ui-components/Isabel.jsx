@@ -8,6 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
+import isabel from "./images/isabel.jpeg"
 export default function Isabel(props) {
   const { overrides, ...rest } = props;
   return (
@@ -15,7 +16,7 @@ export default function Isabel(props) {
       gap="32px"
       direction="column"
       width="unset"
-      height="500px"
+      height="535px"
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
@@ -24,7 +25,7 @@ export default function Isabel(props) {
       {...rest}
     >
       <Image
-        width="unset"
+        width="95%"
         height="unset"
         display="block"
         gap="unset"
@@ -37,6 +38,7 @@ export default function Isabel(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src={isabel}
         {...getOverrideProps(overrides, "Rectangle 8")}
       ></Image>
       <Text

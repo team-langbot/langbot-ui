@@ -24,7 +24,6 @@ export { default as LessonLobby } from "./LessonLobby";
 export { default as Lessonbuttons } from "./Lessonbuttons";
 export { default as Lessononebutton } from "./Lessononebutton";
 export { default as Lessontwobutton } from "./Lessontwobutton";
-export { default as Letstalkandhomerouter } from "./Letstalkandhomerouter";
 export { default as Lobbymainframe } from "./Lobbymainframe";
 export { default as Mon } from "./Mon";
 export { default as Nicetomeetyouheader } from "./Nicetomeetyouheader";

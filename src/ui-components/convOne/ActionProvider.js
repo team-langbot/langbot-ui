@@ -2,10 +2,15 @@
 import { Amplify, API } from 'aws-amplify'
 
 const getNextFromAPI = async () => {
-  // const data = await API.post('projectLangbotApi', '/text')
-  // console.log(data)
-  // return data
-  return "Pending: Call LLM"
+  const apiName = 'projectLangbotApi'; // replace this with your api name.
+  const path = '/text'; //replace this with the path you have configured on your API
+  const myInit = {
+    body: {"conversationId": 1, "stepNumber": 1, "attemptNumber": 1, "text": "hola"},
+    headers: {} // OPTIONAL
+  };
+  const data = await API.post(apiName, path, myInit)
+  return data
+  // return "Pending: Call LLM"
 }
 
 class ActionProvider {
@@ -51,8 +56,12 @@ class ActionProvider {
     getNextFromAPI().then((result) => {
       const greetingMessage = this.createChatBotMessage(result);
       this.updateChatbotState(greetingMessage);
-      });
-
+    }).catch((error) => {
+      console.error("LLM call failed");
+      console.error(error);
+      const greetingMessage = this.createChatBotMessage("Model called failed. Please try again.");
+      this.updateChatbotState(greetingMessage);
+    });
   };
 
   updateChatbotState(message) {

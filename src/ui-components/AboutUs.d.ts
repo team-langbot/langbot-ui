@@ -6,14 +6,12 @@
 
 import * as React from "react";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { LetstalkandhomerouterProps } from "./Letstalkandhomerouter";
 import { ConversationallyheaderProps } from "./Conversationallyheader";
 import { TeammembersProps } from "./Teammembers";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
 export declare type AboutUsOverridesProps = {
     AboutUs?: PrimitiveOverrideProps<FlexProps>;
-    "let's talk and home router"?: LetstalkandhomerouterProps;
     "conversationally header"?: ConversationallyheaderProps;
     "team members"?: TeammembersProps;
 } & EscapeHatchProps;

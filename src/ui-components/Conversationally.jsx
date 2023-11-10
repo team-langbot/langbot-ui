@@ -8,6 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image } from "@aws-amplify/ui-react";
+import Conversationallyvideo from "./Conversationallyvideo";
 import conversationally_photo_logo from "./images/conversationally_photo.png"
 export default function Conversationally(props) {
   const { overrides, ...rest } = props;
@@ -24,7 +25,20 @@ export default function Conversationally(props) {
       {...getOverrideProps(overrides, "Conversationally")}
       {...rest}
     >
-      <Image
+      <Conversationallyvideo
+        display="flex"
+        gap="10px"
+        direction="row"
+        width="840px"
+        height="575px"
+        justifyContent="flex-start"
+        alignItems="flex-start"
+        shrink="100"
+        position="relative"
+        padding="10px 10px 10px 10px"
+        {...getOverrideProps(overrides, "conversationally video")}
+      ></Conversationallyvideo>
+      {/* <Image
         width="80%"
         // width="1495px"
         // height="1255px"
@@ -41,7 +55,7 @@ export default function Conversationally(props) {
           overrides,
           "Olive Green Pink Modern Minimalist Company Logo 1"
         )}
-      ></Image>
+      ></Image> */}
     </Flex>
   );
 }

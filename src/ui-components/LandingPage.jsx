@@ -30,7 +30,7 @@ export default function LandingPage(props) {
       {...getOverrideProps(overrides, "LandingPage")}
       {...rest}
     >
-      <ConversationallyHeader
+      {/* <ConversationallyHeader
         display="flex"
         gap="10px"
         direction="column"
@@ -43,7 +43,7 @@ export default function LandingPage(props) {
         position="relative"
         padding="10px 10px 10px 10px"
         {...getOverrideProps(overrides, "conversationally header")}
-      ></ConversationallyHeader>
+      ></ConversationallyHeader> */}
       <Routerbutton
         display="flex"
         gap="10px"

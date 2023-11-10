@@ -8,6 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
+import jess from "./images/jess.jpeg"
 export default function Jess(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,7 +25,7 @@ export default function Jess(props) {
       {...rest}
     >
       <Image
-        width="unset"
+        width="95%"
         height="unset"
         display="block"
         gap="unset"
@@ -37,6 +38,7 @@ export default function Jess(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        src={jess}
         {...getOverrideProps(overrides, "Rectangle 9")}
       ></Image>
       <Text

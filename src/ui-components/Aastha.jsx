@@ -8,6 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
+import aastha from "./images/aastha.jpeg"
 export default function Aastha(props) {
   const { overrides, ...rest } = props;
   return (
@@ -19,12 +20,12 @@ export default function Aastha(props) {
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
-      padding="0px 0px 0px 0px"
+      padding="20px 20px 20px 20px"
       {...getOverrideProps(overrides, "Aastha")}
       {...rest}
     >
       <Image
-        width="unset"
+        width="95%"
         height="unset"
         display="block"
         gap="unset"
@@ -35,9 +36,9 @@ export default function Aastha(props) {
         basis="0"
         alignSelf="stretch"
         position="relative"
-        padding="0px 0px 0px 0px"
+        padding="10px 10px 10px 10px"
         objectFit="cover"
-        src="../../public/aastha.JPG"
+        src={ aastha}
         {...getOverrideProps(overrides, "Rectangle 7")}
       ></Image>
       <Text
