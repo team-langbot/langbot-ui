@@ -1,15 +1,9 @@
-/***************************************************************************
- * The contents of this file were generated with Amplify Studio.           *
- * Please refrain from making any modifications to this file.              *
- * Any changes to this file will be overwritten when running amplify pull. *
- **************************************************************************/
-
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import ram from "./images/ram.jpeg"
-
+import linkedin from "./images/linkedin.png"
 export default function Ram(props) {
   const { overrides, ...rest } = props;
   return (
@@ -17,7 +11,7 @@ export default function Ram(props) {
       gap="32px"
       direction="column"
       width="unset"
-      height="500px"
+      height="535px"
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
@@ -40,30 +34,51 @@ export default function Ram(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         src={ram}
-        {...getOverrideProps(overrides, "Rectangle 11")}
+        {...getOverrideProps(overrides, "Rectangle 8")}
       ></Image>
+      {/* <a href="https://www.linkedin.com/in/ramsenth/" target="_blank" rel="noreferrer"> */}
       <Text
         fontFamily="Inter"
-        fontSize="27.30817985534668px"
+        fontSize="24px"
         fontWeight="600"
-        color="rgba(69,67,16,1)"
         textTransform="uppercase"
-        lineHeight="33.049102783203125px"
+        color="rgba(69,67,16,1)"
+        // lineHeight="33.049102783203125px"
         textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
-        width="300px"
-        height="unset"
+        width="unset"
+        height="30px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="RAM SENTHAMARAI /&#xA;DATA SCIENCE"
-        {...getOverrideProps(overrides, "RAM SENTHAMARAI / DATA SCIENCE")}
+        children="Ram Senthamarai&#x0A;Data Science"
+        {...getOverrideProps(overrides, "Ram Senthamarai / Data Science")}
+        ></Text>
+      {/* </a> */}
+      <Text
+        fontFamily="Inter"
+        fontSize="18px"
+        color="rgba(69,67,16,1)"
+        // lineHeight="33.049102783203125px"
+        textAlign="left"
+        display="block"
+        height="60px"
+        gap="unset"
+        alignItems="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 5px 0px 5px"
+        whiteSpace="pre-wrap"
+        children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       ></Text>
+      <a href="https://www.linkedin.com/in/ramsenth/" target="_blank" rel="noreferrer">
+        <img height="32px" width="32px" src={linkedin} alt="Ram Senthamarai"></img>
+      </a>
     </Flex>
   );
 }

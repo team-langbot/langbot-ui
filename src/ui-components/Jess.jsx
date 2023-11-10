@@ -1,9 +1,3 @@
-/***************************************************************************
- * The contents of this file were generated with Amplify Studio.           *
- * Please refrain from making any modifications to this file.              *
- * Any changes to this file will be overwritten when running amplify pull. *
- **************************************************************************/
-
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
@@ -17,11 +11,11 @@ export default function Jess(props) {
       gap="32px"
       direction="column"
       width="unset"
-      height="500px"
+      height="535px"
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
-      padding="0px 0px 0px 0px"
+      padding="10px 10px 10px 10px"
       {...getOverrideProps(overrides, "Jess")}
       {...rest}
     >
@@ -40,53 +34,50 @@ export default function Jess(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         src={jess}
-        {...getOverrideProps(overrides, "Rectangle 9")}
       ></Image>
-      <a href="https://www.linkedin.com/in/jessmatth/" target="_blank" rel="noreferrer">
-        <Text
-          fontFamily="Inter"
-          fontSize="27.30817985534668px"
-          fontWeight="600"
-          color="rgba(69,67,16,1)"
-          textTransform="uppercase"
-          // lineHeight="33.049102783203125px"
-          textAlign="center"
-          display="block"
-          direction="column"
-          justifyContent="unset"
-          width="300px"
-          height="unset"
-          gap="unset"
-          alignItems="unset"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="jess matthews /&#xA;product + UX"
-          {...getOverrideProps(overrides, "jess matthews / product + UX")}
-        ></Text>
-      </a>
+      {/* <a href="https://www.linkedin.com/in/jessmatth/" target="_blank" rel="noreferrer"> */}
       <Text
         fontFamily="Inter"
-        fontSize="14px"
+        fontSize="24px"
+        fontWeight="600"
         color="rgba(69,67,16,1)"
-        lineHeight="33.049102783203125px"
-        textAlign="left"
+        textTransform="uppercase"
+        // lineHeight="33.049102783203125px"
+        textAlign="center"
         display="block"
-        height="unset"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="30px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
+        children="Jess Matthews&#x0A;Product /&#xA; UX"
+        {...getOverrideProps(overrides, "Jess Matthews")}
+      ></Text>
+      {/* </a> */}
+      <Text
+        fontFamily="Inter"
+        fontSize="18px"
+        color="rgba(69,67,16,1)"
+        textAlign="left"
+        display="block"
+        height="60px"
+        gap="unset"
+        alignItems="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 5px 0px 5px"
+        whiteSpace="pre-wrap"
         children="Jess Matthews is VP of Global Product Management at Gartner where she oversees a portfolio of data-driven products supporting HR executives."
         {...getOverrideProps(overrides, "jess matthews / product + UX")}
       ></Text>
       <a href="https://www.linkedin.com/in/jessmatth/" target="_blank" rel="noreferrer">
-        <img height="32px" width="32px" src={linkedin} alt="Jess Mathews"></img>
+        <img height="32px" width="32px" src={linkedin} alt="Isabel Chan"></img>
       </a>
-
     </Flex>
   );
 }

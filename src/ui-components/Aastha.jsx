@@ -1,14 +1,9 @@
-/***************************************************************************
- * The contents of this file were generated with Amplify Studio.           *
- * Please refrain from making any modifications to this file.              *
- * Any changes to this file will be overwritten when running amplify pull. *
- **************************************************************************/
-
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 import aastha from "./images/aastha.jpeg"
+import linkedin from "./images/linkedin.png"
 export default function Aastha(props) {
   const { overrides, ...rest } = props;
   return (
@@ -20,8 +15,8 @@ export default function Aastha(props) {
       justifyContent="flex-start"
       alignItems="center"
       position="relative"
-      padding="20px 20px 20px 20px"
-      {...getOverrideProps(overrides, "Aastha")}
+      padding="0px 0px 0px 0px"
+      {...getOverrideProps(overrides, "Isabel")}
       {...rest}
     >
       <Image
@@ -36,36 +31,57 @@ export default function Aastha(props) {
         basis="0"
         alignSelf="stretch"
         position="relative"
-        padding="10px 10px 10px 10px"
+        padding="0px 0px 0px 0px"
         objectFit="cover"
-        src={ aastha}
-        {...getOverrideProps(overrides, "Rectangle 7")}
+        src={aastha}
+        {...getOverrideProps(overrides, "Rectangle 8")}
       ></Image>
+      {/* <a href="https://www.linkedin.com/in/aasthakh/" target="_blank" rel="noreferrer"> */}
       <Text
         fontFamily="Inter"
-        fontSize="27.30817985534668px"
+        fontSize="24px"
         fontWeight="600"
         color="rgba(69,67,16,1)"
         textTransform="uppercase"
-        lineHeight="33.049102783203125px"
+        // lineHeight="33.049102783203125px"
         textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="unset"
+        height="30px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Aastha Khanna&#xA;application/&#xA;ML development"
+        children="Aastha Khanna&#x0A;Application / ML development"
         {...getOverrideProps(
           overrides,
-          "Aastha Khanna application/ ML development"
+          "Aastha Khanna / Application/ ML development"
         )}
+        ></Text>
+      {/* </a> */}
+      <Text
+        fontFamily="Inter"
+        fontSize="18px"
+        color="rgba(69,67,16,1)"
+        textAlign="left"
+        display="block"
+        height="60px"
+        gap="unset"
+        alignItems="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 5px 0px 5px"
+        whiteSpace="pre-wrap"
+        children="Aastha Khanna is a software development engineer at Amazon, currently working on Ring Virtual Security Guard security system."
+        {...getOverrideProps(overrides, "jess matthews / product + UX")}
       ></Text>
+      <a href="https://www.linkedin.com/in/aasthakh/" target="_blank" rel="noreferrer">
+        <img height="32px" width="32px" src={linkedin} alt="Aastha Khanna"></img>
+      </a>
     </Flex>
   );
 }
