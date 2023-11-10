@@ -26,10 +26,26 @@ export default function LandingPage(props) {
       overflow="hidden"
       position="relative"
       padding="10px 10px 0px 10px"
-      backgroundColor="rgba(244,233,227,1)"
+      backgroundColor="rgba(247,238,231,1)"
       {...getOverrideProps(overrides, "LandingPage")}
       {...rest}
     >
+      <Routerbutton
+        display="flex"
+        gap="10px"
+        direction="row"
+        width="unset"
+        height="unset"
+        justifyContent="flex-end"
+        alignItems="center"
+        shrink="0"
+        alignSelf="stretch"
+        position="relative"
+        padding="10px 10px 10px 10px"
+        // backgroundColor="rgba(244,233,227,1)"
+        backgroundColor="rgba(247,238,231,1)"
+        {...getOverrideProps(overrides, "router button")}
+      ></Routerbutton>
       {/* <ConversationallyHeader
         display="flex"
         gap="10px"
@@ -44,21 +60,6 @@ export default function LandingPage(props) {
         padding="10px 10px 10px 10px"
         {...getOverrideProps(overrides, "conversationally header")}
       ></ConversationallyHeader> */}
-      <Routerbutton
-        display="flex"
-        gap="10px"
-        direction="row"
-        width="unset"
-        height="unset"
-        justifyContent="flex-end"
-        alignItems="center"
-        shrink="0"
-        alignSelf="stretch"
-        position="relative"
-        padding="10px 10px 10px 10px"
-        backgroundColor="rgba(244,233,227,1)"
-        {...getOverrideProps(overrides, "router button")}
-      ></Routerbutton>
       <Conversationally
         display="flex"
         gap="10px"

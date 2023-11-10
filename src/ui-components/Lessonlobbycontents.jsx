@@ -1,9 +1,3 @@
-/***************************************************************************
- * The contents of this file were generated with Amplify Studio.           *
- * Please refrain from making any modifications to this file.              *
- * Any changes to this file will be overwritten when running amplify pull. *
- **************************************************************************/
-
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
@@ -24,7 +18,7 @@ export default function Lessonlobbycontents(props) {
       alignItems="center"
       position="relative"
       padding="10px 10px 10px 10px"
-      backgroundColor="rgba(245,233,227,1)"
+      backgroundColor="rgba(247,238,231,1)"
       {...getOverrideProps(overrides, "Lessonlobbycontents")}
       {...rest}
     >
@@ -40,7 +34,7 @@ export default function Lessonlobbycontents(props) {
         alignSelf="stretch"
         position="relative"
         padding="10px 10px 10px 10px"
-        backgroundColor="rgba(244,233,227,1)"
+        backgroundColor="rgba(247,238,231,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
       <Conversationallyheader
@@ -69,7 +63,7 @@ export default function Lessonlobbycontents(props) {
         shrink="0"
         position="relative"
         padding="50px 30px 50px 30px"
-        backgroundColor="rgba(245,233,227,1)"
+        backgroundColor="rgba(247,238,231,1)"
         {...getOverrideProps(overrides, "lobby main frame")}
       ></Lobbymainframe>
       <Triangle

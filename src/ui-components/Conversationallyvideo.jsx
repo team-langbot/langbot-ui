@@ -24,7 +24,7 @@ export default function Conversationallyvideo(props) {
       border="1px SOLID rgba(255,255,255,0.1)"
       borderRadius="2px"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(245,233,227,1)"
+      backgroundColor="rgba(247,238,231,1)"
       {...getOverrideProps(overrides, "Conversationallyvideo")}
       {...rest}
     >

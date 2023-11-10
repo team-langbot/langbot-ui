@@ -24,7 +24,7 @@ export default function Lobbymainframe(props) {
       overflow="hidden"
       position="relative"
       padding="50px 30px 50px 30px"
-      backgroundColor="rgba(245,233,227,1)"
+      backgroundColor="rgba(247,238,231,1)"
       {...getOverrideProps(overrides, "Lobbymainframe")}
       {...rest}
     >

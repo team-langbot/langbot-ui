@@ -59,7 +59,7 @@ class ActionProvider {
     }).catch((error) => {
       console.error("LLM call failed");
       console.error(error);
-      const greetingMessage = this.createChatBotMessage("Model called failed. Please try again.");
+      const greetingMessage = this.createChatBotMessage("Model call failed. Please try again.");
       this.updateChatbotState(greetingMessage);
     });
   };
