@@ -22,5 +22,23 @@ code {
   border-radius: 20px;
   color: #ffffff;
   background-color: #904239;
-  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+.triangle {
+  z-index: 1000
+}
+
+.video {
+  z-index: 1800
+}
+
+.lessonButtons {
+  z-index: 2100
+}
+
+.applicationButton {
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1900
 }

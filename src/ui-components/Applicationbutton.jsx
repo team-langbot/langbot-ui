@@ -19,13 +19,11 @@ export default function Applicationbutton(props) {
       className="button-text"
       gap="10px"
       direction="row"
-      width="359px"
-      height="105px"
       justifyContent="center"
       alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(245,233,227,1)"
       {...getOverrideProps(overrides, "Applicationbutton")}
       {...rest}
       onClick={() => {
@@ -38,7 +36,6 @@ export default function Applicationbutton(props) {
         fontSize="32px"
         fontWeight="600"
         textTransform="uppercase"
-        lineHeight="38.727272033691406px"
         textAlign="center"
         display="block"
         direction="column"
@@ -52,6 +49,7 @@ export default function Applicationbutton(props) {
         padding="10px 10px 10px 10px"
         whiteSpace="pre-wrap"
         children="Let’s talk"
+
         onClick={() => {
           letstalkOnClick();
         }}

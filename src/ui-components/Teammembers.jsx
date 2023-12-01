@@ -13,13 +13,12 @@ export default function Teammembers(props) {
     <Flex
       gap="10px"
       direction="row"
-      width="1440px"
       height="unset"
       justifyContent="flex-start"
       alignItems="flex-start"
       overflow="hidden"
       position="relative"
-      padding="25px 54px 25px 54px"
+      padding="0px 0px 0px 0px"
       backgroundColor="rgba(245,233,227,1)"
       {...getOverrideProps(overrides, "Teammembers")}
       {...rest}

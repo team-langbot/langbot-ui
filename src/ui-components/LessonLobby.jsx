@@ -24,9 +24,8 @@ export default function LessonLobby(props) {
       justifyContent="center"
       alignItems="center"
       position="relative"
-      // padding="10px 10px 10px 10px"
-      padding="10px 10px 10px 10px"
-      backgroundColor="rgba(247,238,231,1)"
+      padding="10px 10px 0px 10px"
+      backgroundColor="rgba(245,233,227,1)"
       {...getOverrideProps(overrides, "LessonLobby")}
       {...rest}
     >
@@ -42,10 +41,10 @@ export default function LessonLobby(props) {
         alignSelf="stretch"
         position="relative"
         padding="10px 10px 10px 10px"
-        backgroundColor="rgba(247,238,231,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
-      {/* <ConversationallyHeader
+      <ConversationallyHeader
         display="flex"
         gap="10px"
         direction="column"
@@ -58,10 +57,10 @@ export default function LessonLobby(props) {
         position="relative"
         padding="10px 10px 10px 10px"
         {...getOverrideProps(overrides, "conversationally header")}
-      ></ConversationallyHeader> */}
+      ></ConversationallyHeader>
       <Lobbymainframe
         display="flex"
-        gap="20px"
+        gap="0px"
         direction="row"
         width="unset"
         height="unset"
@@ -70,16 +69,18 @@ export default function LessonLobby(props) {
         overflow="hidden"
         shrink="0"
         position="relative"
-        padding="50px 30px 0px 30px"
-        backgroundColor="rgba(247,238,231,1)"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "lobby main frame")}
       ></Lobbymainframe>
       <Triangle
+        className="triangle"
         display="flex"
         gap="10px"
         direction="row"
+        top="-150px"
         width="unset"
-        height="274px"
+        height="474px"
         justifyContent="space-between"
         alignItems="center"
         shrink="0"

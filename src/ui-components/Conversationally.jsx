@@ -14,14 +14,14 @@ export default function Conversationally(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="10px"
+      gap="0px"
       direction="row"
       width="unset"
       height="unset"
       justifyContent="center"
       alignItems="center"
       position="relative"
-      padding="10px 10px 10px 10px"
+      padding="0px 0px 0px 0px"
       {...getOverrideProps(overrides, "Conversationally")}
       {...rest}
     >
@@ -29,33 +29,15 @@ export default function Conversationally(props) {
         display="flex"
         gap="10px"
         direction="row"
-        width="840px"
-        height="575px"
+        width="800px"
+        height="445px"
         justifyContent="flex-start"
         alignItems="flex-start"
         shrink="100"
         position="relative"
-        padding="10px 10px 10px 10px"
+        padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "conversationally video")}
       ></Conversationallyvideo>
-      {/* <Image
-        width="80%"
-        // width="1495px"
-        // height="1255px"
-        display="block"
-        gap="unset"
-        alignItems="unset"
-        justifyContent="unset"
-        shrink="0"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        // objectFit="cover"
-        src={conversationally_photo_logo}
-        {...getOverrideProps(
-          overrides,
-          "Olive Green Pink Modern Minimalist Company Logo 1"
-        )}
-      ></Image> */}
     </Flex>
   );
 }

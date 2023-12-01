@@ -18,7 +18,7 @@ export default function Lessonlobbycontents(props) {
       alignItems="center"
       position="relative"
       padding="10px 10px 10px 10px"
-      backgroundColor="rgba(247,238,231,1)"
+      backgroundColor="rgba(245,233,227,1)"
       {...getOverrideProps(overrides, "Lessonlobbycontents")}
       {...rest}
     >
@@ -34,7 +34,7 @@ export default function Lessonlobbycontents(props) {
         alignSelf="stretch"
         position="relative"
         padding="10px 10px 10px 10px"
-        backgroundColor="rgba(247,238,231,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
       <Conversationallyheader
@@ -63,7 +63,7 @@ export default function Lessonlobbycontents(props) {
         shrink="0"
         position="relative"
         padding="50px 30px 50px 30px"
-        backgroundColor="rgba(247,238,231,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "lobby main frame")}
       ></Lobbymainframe>
       <Triangle

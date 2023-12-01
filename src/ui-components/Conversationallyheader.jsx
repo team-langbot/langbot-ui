@@ -20,13 +20,13 @@ export default function Conversationallyheader(props) {
       justifyContent="center"
       alignItems="center"
       position="relative"
-      padding="10px 10px 10px 10px"
+      padding="0px 0px 0px 0px"
       {...getOverrideProps(overrides, "Conversationallyheader")}
       {...rest}
     >
       <Image
-        width="60%"
-        // height="368px"
+        width="480px"
+        height="unset"
         display="block"
         gap="unset"
         alignItems="unset"

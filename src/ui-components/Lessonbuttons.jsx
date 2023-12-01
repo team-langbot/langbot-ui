@@ -36,7 +36,7 @@ export default function Lessonbuttons(props) {
         shrink="0"
         position="relative"
         padding="10px 10px 10px 10px"
-        backgroundColor="rgba(247,238,231,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "lesson one button")}
       ></Lessononebutton>
       <Lessontwobutton
@@ -50,7 +50,7 @@ export default function Lessonbuttons(props) {
         shrink="0"
         position="relative"
         padding="10px 10px 10px 10px"
-        backgroundColor="rgba(247,238,231,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "lesson two button")}
       ></Lessontwobutton>
     </Flex>

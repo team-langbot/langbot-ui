@@ -27,7 +27,7 @@ export default function Lessontwobutton(props) {
       alignItems="center"
       position="relative"
       padding="10px 10px 10px 10px"
-      backgroundColor="rgba(247,238,231,1)"
+      backgroundColor="rgba(245,233,227,1)"
       onClick={() => {
         lessontwoColonletshavecoffeeOnClick();
       }}

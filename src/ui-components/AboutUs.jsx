@@ -15,18 +15,17 @@ export default function AboutUs(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="37px"
+      gap="10px"
       direction="column"
       width="unset"
       height="unset"
-      // width="2157px"
-      // height="1391px"
-      justifyContent="flex-start"
+      justifyContent="center"
       alignItems="center"
+      overflow="hidden"
       position="relative"
-      padding="0px 0px 0px 0px"
+      padding="10px 10px 0px 10px"
       backgroundColor="rgba(245,233,227,1)"
-      {...getOverrideProps(overrides, "AboutUs")}
+      {...getOverrideProps(overrides, "LandingPage")}
       {...rest}
     >
       <Routerbutton
@@ -41,7 +40,7 @@ export default function AboutUs(props) {
         alignSelf="stretch"
         position="relative"
         padding="10px 10px 10px 10px"
-        backgroundColor="rgba(244,233,227,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
       <ConversationallyHeader
@@ -62,8 +61,8 @@ export default function AboutUs(props) {
         display="flex"
         gap="0px"
         direction="row"
-        width="unset"
-        height="unset"
+        width="1200px"
+        height="800px"
         justifyContent="flex-start"
         alignItems="flex-start"
         overflow="hidden"

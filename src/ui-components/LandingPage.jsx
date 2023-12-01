@@ -26,7 +26,7 @@ export default function LandingPage(props) {
       overflow="hidden"
       position="relative"
       padding="10px 10px 0px 10px"
-      backgroundColor="rgba(247,238,231,1)"
+      backgroundColor="rgba(245,233,227,1)"
       {...getOverrideProps(overrides, "LandingPage")}
       {...rest}
     >
@@ -42,11 +42,10 @@ export default function LandingPage(props) {
         alignSelf="stretch"
         position="relative"
         padding="10px 10px 10px 10px"
-        // backgroundColor="rgba(244,233,227,1)"
-        backgroundColor="rgba(247,238,231,1)"
+        backgroundColor="rgba(245,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
-      {/* <ConversationallyHeader
+      <ConversationallyHeader
         display="flex"
         gap="10px"
         direction="column"
@@ -59,13 +58,14 @@ export default function LandingPage(props) {
         position="relative"
         padding="10px 10px 10px 10px"
         {...getOverrideProps(overrides, "conversationally header")}
-      ></ConversationallyHeader> */}
+      ></ConversationallyHeader>
       <Conversationally
+        className="video"
         display="flex"
         gap="10px"
         direction="row"
         width="unset"
-        height="520px"
+        height="330px"
         justifyContent="center"
         alignItems="flex-start"
         shrink="0"
@@ -75,25 +75,27 @@ export default function LandingPage(props) {
         {...getOverrideProps(overrides, "conversationally")}
       ></Conversationally>
       <Applicationbutton
+        className="applicationButton"
         display="flex"
         gap="10px"
         direction="row"
-        width="359px"
-        height="60px"
+        width="320px"
+        height="50px"
         justifyContent="center"
         alignItems="center"
         shrink="0"
         position="relative"
-        padding="10px 10px 10px 10px"
-        backgroundColor="rgba(255,255,255,1)"
+        padding="10px 0px 0px 0px"
         {...getOverrideProps(overrides, "application button")}
       ></Applicationbutton>
       <Triangle
+        className="triangle"
         display="flex"
         gap="10px"
         direction="row"
+        top="-100px"
         width="unset"
-        height="274px"
+        height="470px"
         justifyContent="space-between"
         alignItems="center"
         shrink="0"

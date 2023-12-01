@@ -23,12 +23,13 @@ export default function Lobbymainframe(props) {
       alignItems="flex-start"
       overflow="hidden"
       position="relative"
-      padding="50px 30px 50px 30px"
-      backgroundColor="rgba(247,238,231,1)"
+      padding="0px 0px 0px 0px"
+      backgroundColor="rgba(245,233,227,1)"
       {...getOverrideProps(overrides, "Lobbymainframe")}
       {...rest}
     >
       <Lessonbuttons
+        className="lessonButtons"
         display="flex"
         gap="35px"
         direction="column"
@@ -42,16 +43,17 @@ export default function Lobbymainframe(props) {
         {...getOverrideProps(overrides, "lesson buttons")}
       ></Lessonbuttons>
       <Conversationallyvideo
+        className="video"
         display="flex"
-        gap="10px"
+        gap="0px"
         direction="row"
-        width="840px"
-        height="575px"
+        width="800px"
+        height="440px"
         justifyContent="flex-start"
         alignItems="flex-start"
         shrink="100"
         position="relative"
-        padding="10px 10px 10px 10px"
+        padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "conversationally video")}
       ></Conversationallyvideo>
     </Flex>

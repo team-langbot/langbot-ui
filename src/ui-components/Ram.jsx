@@ -74,7 +74,7 @@ export default function Ram(props) {
         position="relative"
         padding="0px 5px 0px 5px"
         whiteSpace="pre-wrap"
-        children="Ram is an experienced software engineer, ex-Uber, ex-Amazon. Worked on visual search in his last role at Amazon."
+        children="Ram is an experienced software engineer. He worked in the visual search domain in his last role at Amazon."
       ></Text>
       <a href="https://www.linkedin.com/in/ramsenth/" target="_blank" rel="noreferrer">
         <img height="32px" width="32px" src={linkedin} alt="Ram Senthamarai"></img>
