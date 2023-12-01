@@ -39,7 +39,6 @@ export default function Lessontwobutton(props) {
         fontFamily="Inter"
         fontSize="24px"
         fontWeight="500"
-        color="rgba(69,67,16,1)"
         textTransform="uppercase"
         lineHeight="39.54689407348633px"
         textAlign="left"
@@ -54,7 +53,7 @@ export default function Lessontwobutton(props) {
         position="relative"
         padding="8px 8px 8px 8px"
         whiteSpace="pre-wrap"
-        children="lesson two:&#xA;let’s have coffee"
+        children="lesson two:&#xA;Get Coffee"
         onClick={() => {
           lessontwoColonletshavecoffeeOnClick();
         }}

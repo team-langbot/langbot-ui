@@ -13,9 +13,14 @@ code {
 }
 
 .button-text {
+  border-radius: 25px;
   cursor: pointer;
+  /* color: #000; */
+  color: #454310
 }
 .button-text:hover {
-  background-color: #FFFAFA;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #904239;
   font-weight: bold;
 }

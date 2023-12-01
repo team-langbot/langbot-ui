@@ -1011,7 +1011,6 @@ export default function ConvOneSample(props) {
             fontFamily="Inter"
             fontSize="32px"
             fontWeight="400"
-            color="rgba(0,0,0,1)"
             textTransform="uppercase"
             lineHeight="38.727272033691406px"
             textAlign="left"
