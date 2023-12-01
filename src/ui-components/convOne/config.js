@@ -5,7 +5,7 @@ import LinkList from "./components/LinkList/LinkList";
 
 const config = {
   botName: "Casual Acquaintance",
-  initialMessages: [createChatBotMessage("Buenos días! Me llamo Thomas. ¿Y tú?")],
+  initialMessages: [createChatBotMessage("Hola, ¿cómo estás?")],
   customStyles: {
     botMessageBox: {
       backgroundColor: "#904239",

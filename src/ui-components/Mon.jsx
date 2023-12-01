@@ -49,15 +49,14 @@ export default function Mon(props) {
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="30px"
+        height="20px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="mon young /&#xA;product management"
-        {...getOverrideProps(overrides, "mon young / product management")}
+        children="mon young /&#xA;CSO"
         ></Text>
       {/* </a> */}
       <Text

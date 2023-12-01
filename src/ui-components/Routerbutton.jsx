@@ -34,6 +34,7 @@ export default function Routerbutton(props) {
       {...rest}
     >
       <Text
+        className="button-text"
         fontFamily="Inter"
         fontSize="20px"
         fontWeight="400"
@@ -50,7 +51,7 @@ export default function Routerbutton(props) {
         alignItems="unset"
         shrink="0"
         position="relative"
-        padding="0px 20px 0px 0px"
+        padding="8px 8px 8px 8px"
         whiteSpace="pre-wrap"
         children="Home"
         {...getOverrideProps(overrides, "Home")}
@@ -59,6 +60,7 @@ export default function Routerbutton(props) {
         }}
       ></Text>
       <Text
+        className="button-text"
         fontFamily="Inter"
         fontSize="20px"
         fontWeight="400"
@@ -75,7 +77,7 @@ export default function Routerbutton(props) {
         alignItems="unset"
         shrink="0"
         position="relative"
-        padding="0px 20px 0px 0px"
+        padding="8px 8px 8px 8px"
         whiteSpace="pre-wrap"
         children="Let's Talk"
         {...getOverrideProps(overrides, "Let's Talk")}
@@ -84,6 +86,7 @@ export default function Routerbutton(props) {
         }}
       ></Text>
       <Text
+        className="button-text"
         fontFamily="Inter"
         fontSize="20px"
         fontWeight="400"
@@ -100,7 +103,7 @@ export default function Routerbutton(props) {
         alignItems="unset"
         shrink="0"
         position="relative"
-        padding="0px 0px 0px 0px"
+        padding="8px 8px 8px 8px"
         whiteSpace="pre-wrap"
         children="About Us"
         {...getOverrideProps(overrides, "About Us")}

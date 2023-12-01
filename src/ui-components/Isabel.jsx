@@ -49,14 +49,14 @@ export default function Isabel(props) {
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="30px"
+        height="20px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Isabel Chan&#x0A;Data Engineering"
+        children="Isabel Chan&#x0A;CDO"
         {...getOverrideProps(overrides, "Isabel Chan / Data Engineering")}
         ></Text>
       {/* </a> */}

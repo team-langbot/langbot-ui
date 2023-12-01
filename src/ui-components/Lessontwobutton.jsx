@@ -28,10 +28,14 @@ export default function Lessontwobutton(props) {
       position="relative"
       padding="10px 10px 10px 10px"
       backgroundColor="rgba(247,238,231,1)"
-      {...getOverrideProps(overrides, "Lessontwobutton")}
+      onClick={() => {
+        lessontwoColonletshavecoffeeOnClick();
+      }}
+    {...getOverrideProps(overrides, "Lessontwobutton")}
       {...rest}
     >
       <Text
+        className="button-text"
         fontFamily="Inter"
         fontSize="24px"
         fontWeight="500"
@@ -48,7 +52,7 @@ export default function Lessontwobutton(props) {
         alignItems="unset"
         shrink="0"
         position="relative"
-        padding="0px 0px 0px 0px"
+        padding="8px 8px 8px 8px"
         whiteSpace="pre-wrap"
         children="lesson two:&#xA;let’s have coffee"
         onClick={() => {

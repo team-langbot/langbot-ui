@@ -54,7 +54,10 @@ class ActionProvider {
     // callLocalApi();
     // callLanbotApi();
     getNextFromAPI().then((result) => {
-      const greetingMessage = this.createChatBotMessage(result);
+      const botResponse = this.createChatBotMessage(result);
+      console.log(botResponse);
+      // const greetingMessage = this.createChatBotMessage(String(botResponse.message.text));
+      const greetingMessage = this.createChatBotMessage(JSON.stringify(botResponse));
       this.updateChatbotState(greetingMessage);
     }).catch((error) => {
       console.error("LLM call failed");

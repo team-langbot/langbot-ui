@@ -41,9 +41,13 @@ export default function Lessononebutton(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 1")}
+        onClick={() => {
+          lessononeColonNicetomeetyouOnClick();
+        }}
+      {...getOverrideProps(overrides, "Frame 1")}
       >
         <Text
+          className="button-text"
           fontFamily="Inter"
           fontSize="24px"
           fontWeight="500"
@@ -60,7 +64,7 @@ export default function Lessononebutton(props) {
           alignItems="unset"
           shrink="0"
           position="relative"
-          padding="0px 0px 0px 0px"
+          padding="8px 8px 8px 8px"
           whiteSpace="pre-wrap"
           children="lesson one:&#xA;Nice to meet you"
           onClick={() => {

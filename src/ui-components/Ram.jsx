@@ -49,14 +49,14 @@ export default function Ram(props) {
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="30px"
+        height="20px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Ram Senthamarai&#x0A;Data Science"
+        children="Ram Senthamarai&#x0A;CTO"
         {...getOverrideProps(overrides, "Ram Senthamarai / Data Science")}
         ></Text>
       {/* </a> */}
@@ -74,7 +74,7 @@ export default function Ram(props) {
         position="relative"
         padding="0px 5px 0px 5px"
         whiteSpace="pre-wrap"
-        children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        children="Ram is an experienced software engineer, ex-Uber, ex-Amazon. Worked on visual search in his last role at Amazon."
       ></Text>
       <a href="https://www.linkedin.com/in/ramsenth/" target="_blank" rel="noreferrer">
         <img height="32px" width="32px" src={linkedin} alt="Ram Senthamarai"></img>

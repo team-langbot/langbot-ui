@@ -48,14 +48,14 @@ export default function Jess(props) {
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="30px"
+        height="20px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Jess Matthews&#x0A;Product /&#xA; UX"
+        children="Jess Matthews&#x0A;CPO"
         {...getOverrideProps(overrides, "Jess Matthews")}
       ></Text>
       {/* </a> */}

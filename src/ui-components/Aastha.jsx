@@ -49,18 +49,14 @@ export default function Aastha(props) {
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="30px"
+        height="20px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Aastha Khanna&#x0A;Application / ML development"
-        {...getOverrideProps(
-          overrides,
-          "Aastha Khanna / Application/ ML development"
-        )}
+        children="Aastha Khanna&#x0A;CTO"
         ></Text>
       {/* </a> */}
       <Text

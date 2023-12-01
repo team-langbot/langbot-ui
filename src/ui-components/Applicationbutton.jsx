@@ -16,6 +16,7 @@ export default function Applicationbutton(props) {
   const letstalkOnClick = useNavigateAction({ type: "url", url: "/lobby" });
   return (
     <Flex
+      className="button-text"
       gap="10px"
       direction="row"
       width="359px"
@@ -27,8 +28,12 @@ export default function Applicationbutton(props) {
       backgroundColor="rgba(255,255,255,1)"
       {...getOverrideProps(overrides, "Applicationbutton")}
       {...rest}
-    >
+      onClick={() => {
+        letstalkOnClick();
+      }}
+  >
       <Text
+        className="button-text"
         fontFamily="Inter"
         fontSize="32px"
         fontWeight="600"
@@ -45,7 +50,7 @@ export default function Applicationbutton(props) {
         alignItems="unset"
         shrink="0"
         position="relative"
-        padding="0px 0px 0px 0px"
+        padding="8px 8px 8px 8px"
         whiteSpace="pre-wrap"
         children="Let’s talk"
         onClick={() => {

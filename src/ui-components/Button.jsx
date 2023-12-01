@@ -29,6 +29,7 @@ export default function Button(props) {
       {...rest}
     >
       <Text
+        className="button-text"
         fontFamily="Inter"
         fontSize="32px"
         fontWeight="600"
@@ -48,6 +49,7 @@ export default function Button(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Let’s talk"
+        cursor="pointer"
         onClick={() => {
           letstalkOnClick();
         }}
