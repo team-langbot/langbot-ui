@@ -25,7 +25,7 @@ export default function Nicetomeetyouheader(props) {
       {...rest}
     >
       <Image
-        width="800px"
+        width="480px"
         // height="366px"
         display="block"
         gap="unset"

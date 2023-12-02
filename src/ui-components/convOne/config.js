@@ -2,6 +2,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import LearningOptions from "./components/LearningOptions/LearningOptions";
 import LinkList from "./components/LinkList/LinkList";
+import SystemMsg from "./components/SystemMsg";
 
 const config = {
   botName: "Casual Acquaintance",
@@ -14,7 +15,44 @@ const config = {
       backgroundColor: "#904239",
     },
   },
-  widgets: [],
+  widgets: [
+    {
+      widgetName: "systemMsg",
+      widgetFunc: (props) => <SystemMsg {...props} />,
+    },
+    {
+      widgetName: "microCompleteMsg_1",
+      widgetFunc: (props) => <SystemMsg {...props} />,
+      props: {
+        text: "Yaay, you learnt how to say hello and offer a greeting.",
+        confetti: true
+      }
+    },
+    {
+      widgetName: "microCompleteMsg_4",
+      widgetFunc: (props) => <SystemMsg {...props} />,
+      props: { text: "Yaay, you learnt how to make plans.", confetti: true},
+
+    },
+    {
+      widgetName: "microCompleteMsg_5",
+      widgetFunc: (props) => <SystemMsg {...props} />,
+      props: { text: "Yaay, you learnt how to say goodbye.", confetti: true }
+    },
+    {
+      widgetName: "lessonCompleteMsg",
+      widgetFunc: (props) => <SystemMsg {...props} />,
+      props: { text: "Congratulations! You successfully completed this lesson.", confetti: true}
+    },
+    {
+      widgetName: "retryMsg",
+      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think your response was off-topic. Please retry."}
+    },
+    {
+      widgetName: "lessonAbort",
+      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think you were off-topic three times in a row. Ending the conversation."}
+    },
+  ],
 }
 
 export default config

@@ -4,6 +4,7 @@ import { getOverrideProps, useNavigateAction, } from "@aws-amplify/ui-react/inte
 import { Flex, Image } from "@aws-amplify/ui-react";
 import Routerbutton  from "./Routerbutton";
 import Chatbot from 'react-chatbot-kit'
+import { Amplify } from "aws-amplify";
 
 import ActionProvider from './convOne/ActionProvider';
 import MessageParser from './convOne/MessageParser';
@@ -16,9 +17,15 @@ export default function ConvOneActual(props) {
     type: "url",
     url: "/convOneActual",
   });
+
+  sessionStorage.setItem("attemptNumber", 1);
+  sessionStorage.setItem("stepNumber", 1);
+  sessionStorage.setItem("conversationId", 1);
+  sessionStorage.setItem("microGoalsAchieved", 0);
+
   return (
     <Flex
-      gap="20px"
+      gap="10px"
       direction="column"
       width="unset"
       height="unset"
@@ -45,19 +52,19 @@ export default function ConvOneActual(props) {
         backgroundColor="rgba(244,233,227,1)"
         {...getOverrideProps(overrides, "router button")}
       ></Routerbutton>
-      {/* <Flex
+      <Flex
         gap="10px"
         direction="row"
         width="unset"
-        height="unset"
+        height="120px"
         justifyContent="center"
         alignItems="center"
         position="relative"
         padding="10px 10px 10px 10px"
         {...rest}
-      > */}
+      >
         <Image
-          width="800px"
+          width="480px"
           // height="366px"
           display="block"
           gap="unset"
@@ -69,7 +76,7 @@ export default function ConvOneActual(props) {
           // objectFit="cover"
           src={nice_to_meet_you_lets_talk_header}
         ></Image>
-      {/* </Flex> */}
+      </Flex>
 
       <Flex
         gap="0"
