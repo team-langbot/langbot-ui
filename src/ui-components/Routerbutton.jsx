@@ -58,7 +58,7 @@ export default function Routerbutton(props) {
           homeOnClick();
         }}
       ></Text>
-      <Text
+      {/* <Text
         className="button-text"
         fontFamily="Inter"
         fontSize="20px"
@@ -82,7 +82,7 @@ export default function Routerbutton(props) {
         onClick={() => {
           letsTalkOnClick();
         }}
-      ></Text>
+      ></Text> */}
       <Text
         className="button-text"
         fontFamily="Inter"

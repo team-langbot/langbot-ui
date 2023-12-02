@@ -46,16 +46,16 @@ export default function LessonLobby(props) {
       ></Routerbutton>
       <ConversationallyHeader
         display="flex"
-        gap="10px"
+        gap="0px"
         direction="column"
         width="unset"
-        height="120px"
+        height="70px"
         justifyContent="center"
         alignItems="center"
         shrink="0"
         alignSelf="stretch"
         position="relative"
-        padding="10px 10px 10px 10px"
+        padding="10px 10px 10px 160px"
         {...getOverrideProps(overrides, "conversationally header")}
       ></ConversationallyHeader>
       <Lobbymainframe

@@ -39,7 +39,7 @@ export default function ConvOneActual(props) {
     >
       <Routerbutton
         display="flex"
-        gap="10px"
+        gap="0px"
         direction="row"
         width="unset"
         height="unset"
@@ -56,7 +56,7 @@ export default function ConvOneActual(props) {
         gap="10px"
         direction="row"
         width="unset"
-        height="120px"
+        height="60px"
         justifyContent="center"
         alignItems="center"
         position="relative"
@@ -79,15 +79,15 @@ export default function ConvOneActual(props) {
       </Flex>
 
       <Flex
-        gap="0"
+        gap="10px"
         direction="column"
         width="unset"
-        height="unset"
+        height="600px"
         justifyContent="center"
         alignItems="center"
         shrink="0"
         position="relative"
-        padding="0px 0px 0px 0px"
+        padding="20px 0px 0px 0px"
         {...getOverrideProps(overrides, "nice to meet you convo")}
       >
         <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />

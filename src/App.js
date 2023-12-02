@@ -26,7 +26,7 @@ function App() {
       <BrowserRouter>
       <Routes>
           <Route path="/">
-          <Route index element={<LandingPage display="flex"/>} />
+          <Route index element={<LessonLobby display="flex"/>} />
           <Route path="about-us" element={<AboutUs display="flex"/>} />
           <Route path="lobby" element={<LessonLobby display="flex"/>} />
           <Route path="conversation1" element={<Conversation1 display="flex"/>} />
