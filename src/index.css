@@ -19,7 +19,7 @@ code {
   color: #454310
 }
 .button-text:hover {
-  border-radius: 20px;
+  border-radius: 25px;
   color: #ffffff;
   background-color: #904239;
   /* font-weight: bold; */
@@ -41,4 +41,39 @@ code {
   border-radius: 25px;
   cursor: pointer;
   z-index: 1900
+}
+
+dialog {
+  background-color: #f6eee9;
+  border-color: #904239;
+  box-shadow: 0 0 0 7px rgba(0,0,0,0.1) inset;
+}
+
+dialog button {
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  /* color: #000; */
+  color: #454310;
+  background-color: #f6eee9;
+  border: none;
+  /* outline: none; */
+}
+
+dialog button:hover {
+  color: #ffffff;
+  background-color: #904239;
+}
+
+.ui-dialog .ui-dialog-title, .ui-dialog .ui-dialog-buttonpane {
+  text-align:center;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

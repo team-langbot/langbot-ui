@@ -56,7 +56,7 @@ export default function Mon(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="mon young /&#xA;CSO"
+        children="mon young &#xA;CSO"
         ></Text>
       {/* </a> */}
       <Text

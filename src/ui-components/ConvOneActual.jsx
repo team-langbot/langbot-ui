@@ -4,24 +4,22 @@ import { getOverrideProps, useNavigateAction, } from "@aws-amplify/ui-react/inte
 import { Flex, Image } from "@aws-amplify/ui-react";
 import Routerbutton  from "./Routerbutton";
 import Chatbot from 'react-chatbot-kit'
-import { Amplify } from "aws-amplify";
 
 import ActionProvider from './convOne/ActionProvider';
 import MessageParser from './convOne/MessageParser';
 import config from './convOne/config';
+import SummaryPopup from './SummaryPopup';
 import nice_to_meet_you_lets_talk_header from "./images/nice_to_meet_you_lets_talk_header.png"
 
 export default function ConvOneActual(props) {
   const { overrides, ...rest } = props;
-  const yourTurnOnClick = useNavigateAction({
-    type: "url",
-    url: "/convOneActual",
-  });
-
   sessionStorage.setItem("attemptNumber", 1);
   sessionStorage.setItem("stepNumber", 1);
   sessionStorage.setItem("conversationId", 1);
   sessionStorage.setItem("microGoalsAchieved", 0);
+  sessionStorage.setItem("convEnded", false);
+  sessionStorage.setItem("summary", JSON.stringify([]));
+  sessionStorage.setItem("atleastOneError", false);
 
   return (
     <Flex
@@ -88,7 +86,6 @@ export default function ConvOneActual(props) {
         shrink="0"
         position="relative"
         padding="20px 0px 0px 0px"
-        {...getOverrideProps(overrides, "nice to meet you convo")}
       >
         <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
       </Flex>
@@ -102,8 +99,8 @@ export default function ConvOneActual(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "nice to meet you convo")}
       >
+        {SummaryPopup()}
       </Flex>
     </Flex>
   );

@@ -1,7 +1,5 @@
 // Config starter code
 import { createChatBotMessage } from "react-chatbot-kit";
-import LearningOptions from "./components/LearningOptions/LearningOptions";
-import LinkList from "./components/LinkList/LinkList";
 import SystemMsg from "./components/SystemMsg";
 
 const config = {
@@ -52,6 +50,10 @@ const config = {
       widgetName: "lessonAbort",
       widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think you were off-topic three times in a row. Ending the conversation."}
     },
+    {
+      widgetName: "emptyInput",
+      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "Empty input detected."}
+    }
   ],
 }
 
