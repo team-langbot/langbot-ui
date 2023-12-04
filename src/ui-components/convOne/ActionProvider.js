@@ -42,8 +42,9 @@ class ActionProvider {
   saveToSummary = (message, botResponse) => {
     let summary = JSON.parse(sessionStorage.getItem("summary"))
     console.log("Summary is %d long.")
-    const gecResponse = JSON.parse(botResponse.message.gec_response);
-    if (gecResponse.length > 0) {
+    const gecResponse = JSON.parse(botResponse.message.gecResponse);
+
+    if (gecResponse && gecResponse.length > 0) {
       // NOTE: This logic handles just the first error. Assumption is that the model will never return
       // more than one error.
       const errorType = gecResponse[0].entity === "B-na" ? "number" : "gender";
@@ -70,20 +71,26 @@ class ActionProvider {
 
   handleMoveNext(botResponse) {
     let stepNumber = parseInt(sessionStorage.getItem("stepNumber"));
-    if (this.microGoals[stepNumber]) {
-      // show next text and celebrate
+    const hasCue = botResponse.message.cue !== null;
+    const hasNext = botResponse.message.nextQuestion !== null;
+    const reachedMicroGoal = this.microGoals[stepNumber];
+    if (hasCue) {
+      // Display cue first
       const nextMessage = this.createChatBotMessage(
-        botResponse.message.text,
-        { widget: 'microCompleteMsg_' + stepNumber, }
-      );
-      this.updateChatbotState(nextMessage);
-    } else {
-      // show next text
-      const nextMessage = this.createChatBotMessage(
-        botResponse.message.text
+        botResponse.message.cue,
+        reachedMicroGoal ? { widget: 'microCompleteMsg_' + stepNumber, } : null
       );
       this.updateChatbotState(nextMessage);
     }
+    if (hasNext) {
+      // Display next first
+      const nextMessage = this.createChatBotMessage(
+        botResponse.message.nextQuestion,
+        reachedMicroGoal && !hasCue ? { widget: 'microCompleteMsg_' + stepNumber, } : null
+      );
+      this.updateChatbotState(nextMessage);
+    }
+
     //Update step id
     sessionStorage.setItem("stepNumber", stepNumber + 1);
   }
@@ -94,22 +101,23 @@ class ActionProvider {
     sessionStorage.setItem("attemptNumber", attemptNumber + 1);
 
     const nextMessage = this.createChatBotMessage(
-      botResponse.message.text,
+      botResponse.message.cue,
       { widget: 'retryMsg', }
     );
     this.updateChatbotState(nextMessage);
-  }
+    this.updateChatbotState(this.createChatBotMessage(botResponse.message.nextQuestion));
+}
 
   endConversation(botResponse) {
     if (botResponse.message.onTopic) {
       const nextMessage = this.createChatBotMessage(
-        botResponse.message.text,
+        botResponse.message.cue,
         { widget: "lessonCompleteMsg", }
       );
       this.updateChatbotState(nextMessage);
     } else {
       const nextMessage = this.createChatBotMessage(
-        botResponse.message.text,
+        botResponse.message.cue,
         { widget: "lessonAbort", });
       this.updateChatbotState(nextMessage);
     }
