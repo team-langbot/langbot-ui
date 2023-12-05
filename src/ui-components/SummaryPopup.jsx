@@ -3,7 +3,7 @@ import React from 'react';
 export default function SummaryPopup() {
   return (
     <dialog className="summaryDialog" id="summaryPopup">
-      <h2>Summary of Errors</h2>
+      <h2>Conversation Summary</h2>
       <div className="summaryContainer" >
         <form>
           <p className="summaryPopupText">

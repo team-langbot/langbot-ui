@@ -9,7 +9,7 @@ import ActionProvider from './convOne/ActionProvider';
 import MessageParser from './convOne/MessageParser';
 import config from './convOne/config';
 import SummaryPopup from './SummaryPopup';
-import nice_to_meet_you_lets_talk_header from "./images/nice_to_meet_you_lets_talk_header.png"
+import lesson1_actual from "./images/lesson1_actual.png"
 
 export default function ConvOneActual(props) {
   const { overrides, ...rest } = props;
@@ -72,7 +72,7 @@ export default function ConvOneActual(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           // objectFit="cover"
-          src={nice_to_meet_you_lets_talk_header}
+          src={lesson1_actual}
         ></Image>
       </Flex>
 

@@ -8,7 +8,7 @@
 import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image } from "@aws-amplify/ui-react";
-import nice_to_meet_you_header from "./images/nice_to_meet_you_header.png"
+import lesson1_example from "./images/lesson1_example.png"
 export default function Nicetomeetyouheader(props) {
   const { overrides, ...rest } = props;
   return (
@@ -35,7 +35,7 @@ export default function Nicetomeetyouheader(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         // objectFit="cover"
-        src={nice_to_meet_you_header}
+        src={lesson1_example}
         {...getOverrideProps(overrides, "nice_to_meet_you_header 1")}
       ></Image>
     </Flex>

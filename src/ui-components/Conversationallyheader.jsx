@@ -25,7 +25,7 @@ export default function Conversationallyheader(props) {
       {...rest}
     >
       <Image
-        width="480px"
+        width="640px"
         height="unset"
         display="block"
         gap="unset"
