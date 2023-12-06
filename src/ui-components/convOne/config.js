@@ -44,7 +44,7 @@ const config = {
     },
     {
       widgetName: "retryMsg",
-      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think your response was off-topic. Please retry."}
+      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think your response was off-topic. Please try again."}
     },
     {
       widgetName: "lessonAbort",
