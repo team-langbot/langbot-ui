@@ -51,9 +51,9 @@ class ActionProvider {
 
     if (gecResponse && gecResponse.length > 0) {
       sessionStorage.setItem("atleastOneError", true);
-      for (let cur in gecResponse) {
+      for (let cur of gecResponse) {
         const errorType = cur.entity === "B-na" ? "number" : "gender";
-        let errStr = `The Word ${cur.word} in "${message}" has a ${errorType} mismatch error.`;
+        let errStr = `The word ${cur.word} in "${message}" has a ${errorType} mismatch error.`;
         summary.push(errStr);
       }
       sessionStorage.setItem("summary", JSON.stringify(summary));

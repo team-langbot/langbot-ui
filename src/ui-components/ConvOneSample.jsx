@@ -5,7 +5,8 @@ import Nicetomeetyouheader from "./Nicetomeetyouheader";
 import { Flex, Icon, Image, Text } from "@aws-amplify/ui-react";
 import person1 from "./images/person1.png";
 import person2 from "./images/person2.png";
-import Routerbutton  from "./Routerbutton";
+import Routerbutton from "./Routerbutton";
+import lesson_1 from "./images/lesson_1.mp4"
 
 export default function ConvOneSample(props) {
   const { overrides, ...rest } = props;
@@ -18,7 +19,7 @@ export default function ConvOneSample(props) {
       gap="20px"
       direction="column"
       width="unset"
-      height="unset"
+      height="800px"
       justifyContent="center"
       alignItems="center"
       position="relative"
@@ -44,7 +45,7 @@ export default function ConvOneSample(props) {
       ></Routerbutton>
       <Nicetomeetyouheader
         display="flex"
-        gap="10px"
+        gap="0px"
         direction="row"
         width="unset"
         height="unset"
@@ -56,7 +57,59 @@ export default function ConvOneSample(props) {
         padding="10px 10px 10px 10px"
         {...getOverrideProps(overrides, "nice to meet you header")}
       ></Nicetomeetyouheader>
-      <Flex
+    <Flex
+      gap="0px"
+      direction="column"
+      width="unset"
+      top="-20px"
+      justifyContent="center"
+      alignItems="center"
+      overflow="hidden"
+      position="relative"
+      border="1px SOLID rgba(255,255,255,0.1)"
+      borderRadius="2px"
+      padding="0px 0px 0px 0px"
+      backgroundColor="rgba(245,233,227,1)"
+      {...getOverrideProps(overrides, "Conversationallyvideo")}
+      {...rest}
+    >
+      <video
+          style={{ maxWidth: "100%", width: "640px", margin: "0 auto" }}
+          autoPlay
+          playsInline
+          loop
+          muted
+          controls
+          alt="All the devices"
+          src={lesson_1}
+        />
+        <Text
+          className="button-text"
+          fontFamily="Inter"
+          fontSize="32px"
+          fontWeight="400"
+          textTransform="uppercase"
+          // lineHeight="38.727272033691406px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="296px"
+          height="unset"
+          gap="unset"
+          alignItems="center"
+          shrink="0"
+          position="relative"
+          padding="8px 8px 8px 8px"
+          whiteSpace="pre-wrap"
+          children="Your Turn Now..."
+          {...getOverrideProps(overrides, "Your Turn Now...")}
+          onClick={() => {
+            yourTurnOnClick();
+          }}
+        ></Text>
+    </Flex>
+      {/* <Flex
         gap="0"
         direction="column"
         width="unset"
@@ -993,46 +1046,7 @@ export default function ConvOneSample(props) {
             {...getOverrideProps(overrides, "Rectangle 144032")}
             ></Image>
         </Flex>
-
-        <Flex
-          gap="0"
-          direction="column"
-          width="unset"
-          height="unset"
-          justifyContent="center"
-          alignItems="center"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "your turn")}
-        >
-          <Text
-            className="button-text"
-            fontFamily="Inter"
-            fontSize="32px"
-            fontWeight="400"
-            textTransform="uppercase"
-            lineHeight="38.727272033691406px"
-            textAlign="left"
-            display="block"
-            direction="column"
-            justifyContent="unset"
-            width="296px"
-            height="unset"
-            gap="unset"
-            alignItems="center"
-            shrink="0"
-            position="relative"
-            padding="8px 8px 8px 8px"
-            whiteSpace="pre-wrap"
-            children="Your Turn Now..."
-            {...getOverrideProps(overrides, "Your Turn Now...")}
-            onClick={() => {
-              yourTurnOnClick();
-            }}
-          ></Text>
-        </Flex>
-        </Flex>
+        </Flex> */}
     </Flex>
   );
 }
