@@ -22,20 +22,20 @@ const config = {
       widgetName: "microCompleteMsg_1",
       widgetFunc: (props) => <SystemMsg {...props} />,
       props: {
-        text: "Yaay, you learnt how to say hello and offer a greeting.",
+        text: "Yaay, you learned how to say hello and offer a greeting.",
         confetti: true
       }
     },
     {
       widgetName: "microCompleteMsg_4",
       widgetFunc: (props) => <SystemMsg {...props} />,
-      props: { text: "Yaay, you learnt how to make plans.", confetti: true},
+      props: { text: "Yaay, you learned how to make plans.", confetti: true},
 
     },
     {
       widgetName: "microCompleteMsg_5",
       widgetFunc: (props) => <SystemMsg {...props} />,
-      props: { text: "Yaay, you learnt how to say goodbye.", confetti: true }
+      props: { text: "Yaay, you learned how to say goodbye.", confetti: true }
     },
     {
       widgetName: "lessonCompleteMsg",

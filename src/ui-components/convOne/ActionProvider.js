@@ -124,7 +124,7 @@ class ActionProvider {
       let stepNumber = parseInt(sessionStorage.getItem("stepNumber"));
       const reachedMicroGoal = this.microGoals[stepNumber];
       if (reachedMicroGoal) {
-        this.addMicroLessonToSummary("Learnt how to " + reachedMicroGoal);
+        this.addMicroLessonToSummary("Learned how to " + reachedMicroGoal);
       }
       const nextMessage = this.createChatBotMessage(
         botResponse.message.cue,
