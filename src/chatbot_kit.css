@@ -137,10 +137,12 @@
 .react-chatbot-kit-chat-container {
   position: relative;
   width: 575px;
+  /* width: 375px; */
 }
 
 .react-chatbot-kit-chat-inner-container {
   height: 500px;
+  /* height: 450px; */
   /* background-color: #f4e9e3; */
   background-color: #fff;
   border-radius: 3px;
@@ -171,6 +173,7 @@
   padding: 0 17.5px 10px 17.5px;
   overflow: scroll;
   height: 424px;
+  /* height: 400px; */
 }
 
 .react-chatbot-kit-chat-input {

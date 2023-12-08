@@ -79,7 +79,7 @@ class ActionProvider {
     const hasNext = botResponse.message.nextQuestion !== null;
     const reachedMicroGoal = this.microGoals[stepNumber];
     if (reachedMicroGoal) {
-      this.addMicroLessonToSummary("Learnt how to " + reachedMicroGoal);
+      this.addMicroLessonToSummary("You learned how to " + reachedMicroGoal);
     }
 
     if (hasCue) {
@@ -124,7 +124,7 @@ class ActionProvider {
       let stepNumber = parseInt(sessionStorage.getItem("stepNumber"));
       const reachedMicroGoal = this.microGoals[stepNumber];
       if (reachedMicroGoal) {
-        this.addMicroLessonToSummary("Learned how to " + reachedMicroGoal);
+        this.addMicroLessonToSummary("You learned how to " + reachedMicroGoal);
       }
       const nextMessage = this.createChatBotMessage(
         botResponse.message.cue,
@@ -144,6 +144,28 @@ class ActionProvider {
   }
 
   getNext = (message) => {
+    // Messages for presentation deck.
+    // if (message == "My name are Mon.") {
+    //   const nextMessage = this.createChatBotMessage(
+    //     "I see, you mean your name is Mon.");
+    //   this.updateChatbotState(nextMessage);
+    //   return;
+    // }
+    // if (message == "My name is Mon.") {
+    //   const nextMessage = this.createChatBotMessage(
+    //     "Nice to meet you Mon. Where are you from?");
+    //   this.updateChatbotState(nextMessage);
+    //   return;
+    // }
+    // if (message == "It is cloudy today.") {
+    //   const nextMessage = this.createChatBotMessage(
+    //     "Interesting",
+    //     { widget: 'retryMsg', }
+    //   );
+    //   this.updateChatbotState(nextMessage);
+    //   this.updateChatbotState(this.createChatBotMessage("Hello, my name is Lea. What is your name?"));
+    //   return
+    // }
     if (!message || message.replace(/\s/g, "") === "") {
       const nextMessage = this.createChatBotMessage(
         "Lo siento, no entendí eso.",

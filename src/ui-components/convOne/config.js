@@ -5,6 +5,7 @@ import SystemMsg from "./components/SystemMsg";
 const config = {
   botName: "Casual Acquaintance",
   initialMessages: [createChatBotMessage("Hola, ¿cómo estás?")],
+  // initialMessages: [createChatBotMessage("Hello, my name is Lea. What is your name?")],
   customStyles: {
     botMessageBox: {
       backgroundColor: "#904239",
@@ -44,7 +45,7 @@ const config = {
     },
     {
       widgetName: "retryMsg",
-      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think your response was off-topic. Please try again."}
+      widgetFunc: (props) => <SystemMsg {...props} />, props: {text: "We think your response was off-topic. Let us try one more time."}
     },
     {
       widgetName: "lessonAbort",
