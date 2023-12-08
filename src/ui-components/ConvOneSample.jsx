@@ -78,7 +78,6 @@ export default function ConvOneSample(props) {
           autoPlay
           playsInline
           loop
-          muted
           controls
           alt="All the devices"
           src={lesson_1}
