@@ -147,7 +147,8 @@ class ActionProvider {
     // Messages for presentation deck.
     // if (message == "My name are Mon.") {
     //   const nextMessage = this.createChatBotMessage(
-    //     "I see, you mean your name is Mon.");
+    //     "I see, you mean \"My name is Mon.\" My name is Lea. How are you doing?");
+    //     // "I see, you mean \"My name is Mon\".");
     //   this.updateChatbotState(nextMessage);
     //   return;
     // }
