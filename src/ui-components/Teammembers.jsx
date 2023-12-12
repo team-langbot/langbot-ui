@@ -11,7 +11,7 @@ export default function Teammembers(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="10px"
+      gap="0px"
       direction="row"
       height="unset"
       justifyContent="flex-start"
@@ -25,7 +25,7 @@ export default function Teammembers(props) {
     >
       <Aastha
         display="flex"
-        gap="32px"
+        gap="0px"
         direction="column"
         width="unset"
         height="unset"
@@ -40,7 +40,7 @@ export default function Teammembers(props) {
       ></Aastha>
       <Isabel
         display="flex"
-        gap="32px"
+        gap="0px"
         direction="column"
         width="unset"
         height="unset"
@@ -55,7 +55,7 @@ export default function Teammembers(props) {
       ></Isabel>
       <Jess
         display="flex"
-        gap="32px"
+        gap="0px"
         direction="column"
         width="unset"
         height="unset"
@@ -70,7 +70,7 @@ export default function Teammembers(props) {
       ></Jess>
       <Mon
         display="flex"
-        gap="32px"
+        gap="0px"
         direction="column"
         width="unset"
         height="unset"
@@ -85,7 +85,7 @@ export default function Teammembers(props) {
       ></Mon>
       <Ram
         display="flex"
-        gap="32px"
+        gap="0px"
         direction="column"
         width="unset"
         height="unset"

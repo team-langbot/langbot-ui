@@ -39,33 +39,59 @@ export default function Aastha(props) {
       {/* <a href="https://www.linkedin.com/in/aasthakh/" target="_blank" rel="noreferrer"> */}
       <Text
         fontFamily="Inter"
-        fontSize="24px"
+        fontSize="20px"
         fontWeight="600"
         color="rgba(69,67,16,1)"
         textTransform="uppercase"
-        // lineHeight="33.049102783203125px"
+        lineHeight="0px"
         textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="20px"
-        gap="unset"
+        height="unset"
+        gap="0px"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Aastha Khanna&#x0A;CTO"
-        ></Text>
-      {/* </a> */}
+        >Aastha Khanna <a href="https://www.linkedin.com/in/aasthakh/" target="_blank" rel="noreferrer">
+      <img height="18px" width="18px" src={linkedin} alt="Aastha Khanna"></img>
+    </a></Text>
+
+      <Text
+        fontFamily="Inter"
+        fontSize="18px"
+        // fontWeight="400"
+        color="rgba(69,67,16,1)"
+        textTransform="uppercase"
+        lineHeight="10px"
+        textAlign="center"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="0px"
+        top="-24px"
+        alignItems="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+      >
+        CEO
+      </Text>
+
       <Text
         fontFamily="Inter"
         fontSize="18px"
         color="rgba(69,67,16,1)"
+        // lineHeight="33.049102783203125px"
         textAlign="left"
         display="block"
-        height="60px"
+        height="120px"
+        top="-32px"
         gap="unset"
         alignItems="unset"
         shrink="0"
@@ -75,9 +101,6 @@ export default function Aastha(props) {
         children="Aastha Khanna is a software development engineer at Amazon, currently working on Ring Virtual Security Guard security system."
         {...getOverrideProps(overrides, "jess matthews / product + UX")}
       ></Text>
-      <a href="https://www.linkedin.com/in/aasthakh/" target="_blank" rel="noreferrer">
-        <img height="32px" width="32px" src={linkedin} alt="Aastha Khanna"></img>
-      </a>
     </Flex>
   );
 }

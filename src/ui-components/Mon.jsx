@@ -8,7 +8,7 @@ export default function Mon(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="32px"
+      gap="0px"
       direction="column"
       width="unset"
       height="535px"
@@ -39,25 +39,46 @@ export default function Mon(props) {
       {/* <a href="https://www.linkedin.com/in/mon-young-a510901/" target="_blank" rel="noreferrer"> */}
       <Text
         fontFamily="Inter"
-        fontSize="24px"
+        fontSize="20px"
         fontWeight="600"
         color="rgba(69,67,16,1)"
         textTransform="uppercase"
-        // lineHeight="33.049102783203125px"
+        lineHeight="0px"
         textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="20px"
-        gap="unset"
+        height="unset"
+        gap="0px"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="mon young &#xA;CSO"
-        ></Text>
+      >mon young <a href="https://www.linkedin.com/in/mon-young-a510901/" target="_blank" rel="noreferrer">
+      <img height="18px" width="18px" src={linkedin} alt="Mon Young"></img>
+    </a></Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="18px"
+        // fontWeight="400"
+        color="rgba(69,67,16,1)"
+        textTransform="uppercase"
+        lineHeight="10px"
+        textAlign="center"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="0px"
+        top="-24px"
+        alignItems="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+      >CSO</Text>
       {/* </a> */}
       <Text
         fontFamily="Inter"
@@ -66,19 +87,16 @@ export default function Mon(props) {
         // lineHeight="33.049102783203125px"
         textAlign="left"
         display="block"
-        height="60px"
+        height="120px"
+        top="-32px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 5px 0px 5px"
         whiteSpace="pre-wrap"
-        children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        {...getOverrideProps(overrides, "jess matthews / product + UX")}
+        children="Mon Young founded ABiCO Capital Management, America branch. He presently directing the IT DevOps and Data Science divisions at Panasonic R&D Company of America."
       ></Text>
-      <a href="https://www.linkedin.com/in/mon-young-a510901/" target="_blank" rel="noreferrer">
-        <img height="32px" width="32px" src={linkedin} alt="Mon Young"></img>
-      </a>
     </Flex>
   );
 }

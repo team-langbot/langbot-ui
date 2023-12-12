@@ -8,15 +8,15 @@ export default function Isabel(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="32px"
-      direction="column"
-      width="unset"
-      height="535px"
-      justifyContent="flex-start"
-      alignItems="center"
-      position="relative"
-      padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "Isabel")}
+    gap="0px"
+    direction="column"
+    width="unset"
+    height="535px"
+    justifyContent="flex-start"
+    alignItems="center"
+    position="relative"
+    padding="0px 0px 0px 0px"
+    {...getOverrideProps(overrides, "Isabel")}
       {...rest}
     >
       <Image
@@ -39,26 +39,48 @@ export default function Isabel(props) {
       {/* <a href="https://www.linkedin.com/in/waitingchan/" target="_blank" rel="noreferrer"> */}
       <Text
         fontFamily="Inter"
-        fontSize="24px"
+        fontSize="20px"
         fontWeight="600"
-        textTransform="uppercase"
         color="rgba(69,67,16,1)"
-        // lineHeight="33.049102783203125px"
+        textTransform="uppercase"
+        lineHeight="0px"
         textAlign="center"
         display="block"
         direction="column"
         justifyContent="unset"
         width="unset"
-        height="20px"
-        gap="unset"
+        height="unset"
+        gap="0px"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Isabel Chan&#x0A;CDO"
-        {...getOverrideProps(overrides, "Isabel Chan / Data Engineering")}
-        ></Text>
+      >
+        Isabel Chan <a href="https://www.linkedin.com/in/waitingchan/" target="_blank" rel="noreferrer">
+      <img height="18px" width="18px" src={linkedin} alt="Isabel Chan"></img>
+    </a>
+      </Text>
+      <Text
+        fontFamily="Inter"
+        fontSize="18px"
+        // fontWeight="400"
+        color="rgba(69,67,16,1)"
+        textTransform="uppercase"
+        lineHeight="10px"
+        textAlign="center"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="0px"
+        top="-24px"
+        alignItems="unset"
+        shrink="0"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+      >CDO</Text>
       {/* </a> */}
       <Text
         fontFamily="Inter"
@@ -67,18 +89,16 @@ export default function Isabel(props) {
         // lineHeight="33.049102783203125px"
         textAlign="left"
         display="block"
-        height="60px"
+        height="120px"
+        top="-32px"
         gap="unset"
         alignItems="unset"
         shrink="0"
         position="relative"
         padding="0px 5px 0px 5px"
         whiteSpace="pre-wrap"
-        children="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        children="Isabel is a Data Engineer at , where she is involved in the ad measurement and support of various advertising products."
       ></Text>
-      <a href="https://www.linkedin.com/in/waitingchan/" target="_blank" rel="noreferrer">
-        <img height="32px" width="32px" src={linkedin} alt="Isabel Chan"></img>
-      </a>
     </Flex>
   );
 }
