@@ -51,11 +51,25 @@ class ActionProvider {
 
     if (gecResponse && gecResponse.length > 0) {
       sessionStorage.setItem("atleastOneError", true);
-      for (let cur of gecResponse) {
-        const errorType = cur.entity === "B-na" ? "number" : "gender";
-        let errStr = `The word ${cur.word} in "${message}" has a ${errorType} mismatch error.`;
-        summary.push(errStr);
+      let errors = gecResponse.length;
+      let prev = gecResponse[0];
+      for (let i = 1; i < errors; i++) {
+        let cur = gecResponse[i];
+        if (cur.word.startsWith("##")) {
+          // If current word starts with ## then add to last word
+          prev.word = prev.word + cur.word.replace("##", "");
+        } else {
+          // else add the last word to accumulation and set cur to prev
+          const errorType = prev.entity === "B-na" ? "number" : "gender";
+          let errStr = `The word ${prev.word} in "${message}" has a ${errorType} mismatch error.`;
+          summary.push(errStr);
+          prev = cur;
+        }
       }
+      // Finally add the prev to accumulation
+      const errorType = prev.entity === "B-na" ? "number" : "gender";
+      let errStr = `The word ${prev.word} in "${message}" has a ${errorType} mismatch error.`;
+      summary.push(errStr);
       sessionStorage.setItem("summary", JSON.stringify(summary));
     }
   }
