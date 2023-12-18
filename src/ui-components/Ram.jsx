@@ -33,6 +33,7 @@ export default function Ram(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        borderRadius="95%"
         src={ram}
         {...getOverrideProps(overrides, "Rectangle 8")}
       ></Image>
@@ -66,7 +67,6 @@ export default function Ram(props) {
         fontSize="18px"
         // fontWeight="400"
         color="rgba(69,67,16,1)"
-        textTransform="uppercase"
         lineHeight="10px"
         textAlign="center"
         display="block"
@@ -80,7 +80,7 @@ export default function Ram(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-      >CTO</Text>
+      >Data Science</Text>
       <Text
         fontFamily="Inter"
         fontSize="18px"

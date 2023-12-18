@@ -32,6 +32,7 @@ export default function Jess(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
+        borderRadius="95%"
         objectFit="cover"
         src={jess}
       ></Image>
@@ -65,7 +66,6 @@ export default function Jess(props) {
         fontSize="18px"
         // fontWeight="400"
         color="rgba(69,67,16,1)"
-        textTransform="uppercase"
         lineHeight="10px"
         textAlign="center"
         display="block"
@@ -79,7 +79,7 @@ export default function Jess(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-      >CPO</Text>
+      >Product Management/UX</Text>
       <Text
         fontFamily="Inter"
         fontSize="18px"
@@ -95,7 +95,6 @@ export default function Jess(props) {
         padding="0px 5px 0px 5px"
         whiteSpace="pre-wrap"
         children="Jess Matthews is VP of Global Product Management at Gartner where she oversees a portfolio of data-driven products supporting HR executives."
-        {...getOverrideProps(overrides, "jess matthews / product + UX")}
       ></Text>
     </Flex>
   );

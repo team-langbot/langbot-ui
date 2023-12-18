@@ -32,6 +32,7 @@ export default function Isabel(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
+        borderRadius="95%"
         objectFit="cover"
         src={isabel}
         {...getOverrideProps(overrides, "Rectangle 8")}
@@ -66,7 +67,6 @@ export default function Isabel(props) {
         fontSize="18px"
         // fontWeight="400"
         color="rgba(69,67,16,1)"
-        textTransform="uppercase"
         lineHeight="10px"
         textAlign="center"
         display="block"
@@ -80,7 +80,7 @@ export default function Isabel(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-      >CDO</Text>
+      >Data Engineernig</Text>
       {/* </a> */}
       <Text
         fontFamily="Inter"
@@ -97,7 +97,7 @@ export default function Isabel(props) {
         position="relative"
         padding="0px 5px 0px 5px"
         whiteSpace="pre-wrap"
-        children="Isabel is a Data Engineer at , where she is involved in the ad measurement and support of various advertising products."
+        children="Isabel is a Data Engineer at TikTok, where she is involved in the ad measurement and support of various advertising products."
       ></Text>
     </Flex>
   );

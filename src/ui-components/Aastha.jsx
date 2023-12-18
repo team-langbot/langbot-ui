@@ -33,6 +33,7 @@ export default function Aastha(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         objectFit="cover"
+        borderRadius="95%"
         src={aastha}
         {...getOverrideProps(overrides, "Rectangle 8")}
       ></Image>
@@ -65,7 +66,7 @@ export default function Aastha(props) {
         fontSize="18px"
         // fontWeight="400"
         color="rgba(69,67,16,1)"
-        textTransform="uppercase"
+        // textTransform="uppercase"
         lineHeight="10px"
         textAlign="center"
         display="block"
@@ -80,7 +81,7 @@ export default function Aastha(props) {
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
       >
-        CEO
+        Engineering/MLOps
       </Text>
 
       <Text

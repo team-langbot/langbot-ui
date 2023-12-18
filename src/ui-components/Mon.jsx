@@ -32,6 +32,7 @@ export default function Mon(props) {
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
+        borderRadius="95%"
         objectFit="cover"
         src={mon}
         {...getOverrideProps(overrides, "Rectangle 8")}
@@ -64,7 +65,6 @@ export default function Mon(props) {
         fontSize="18px"
         // fontWeight="400"
         color="rgba(69,67,16,1)"
-        textTransform="uppercase"
         lineHeight="10px"
         textAlign="center"
         display="block"
@@ -78,7 +78,7 @@ export default function Mon(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-      >CSO</Text>
+      >Project Management</Text>
       {/* </a> */}
       <Text
         fontFamily="Inter"
